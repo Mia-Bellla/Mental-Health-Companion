@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+    <div class="sidebar">
+        <a href="{{ url_for('dashboard') }}" id="hamburger-btn" aria-label="Dashboard" class="focus:outline-none flex items-center px-4 py-6 text-indigo-700 font-semibold hover:bg-indigo-100">
+            <i class="fas fa-bars fa-2x mr-2"></i> Dashboard
+        </a>
+    </div>
     <div class="container">
     <header class="flex items-center justify-between p-4 bg-white rounded shadow mb-6">
         <div>
-            <h1><i class="fas fa-brain"></i> MindfulAI</h1>
-            <p>Your compassionate mental health companion</p>
+            <!-- Hamburger menu removed from header -->
         </div>
         <div>
-            <button id="hamburger-btn" aria-label="Toggle menu" class="focus:outline-none">
-                <i class="fas fa-bars fa-2x"></i>
-            </button>
+            <h1><i class="fas fa-brain"></i> MindfulAI</h1>
+            <p>Your compassionate mental health companion</p>
         </div>
     </header>
 
